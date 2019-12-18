@@ -105,15 +105,15 @@ function createSVG({
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" style="font-family: sans-serif">
       <defs>${createDefs(usedTiles, size)}</defs>
       ${layers.join("")}
-      ${createProgress(frames.length, width, delay, animateType)}
+      ${createProgress(commentY, frames.length, width, delay, animateType)}
     </svg>`;
 }
 
-function createProgress(total, width, delay, type) {
+function createProgress(y, total, width, delay, type) {
   if (total === 1) {
     return "";
   }
-  const attr = `d="M 0,0 H${width}" stroke="silver" stroke-width="${width / 50}" stroke-dasharray="${width}"`;
+  const attr = `d="M 0,${y} H${width}" stroke="silver" stroke-width="${width / 50}" stroke-dasharray="${width}"`;
   if (type === "css") {
     return `
       <path ${attr} id="p"/>

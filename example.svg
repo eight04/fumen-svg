@@ -94,7 +94,7 @@
     </style>
       </svg>
       
-      <path d="M 0,0 H160" stroke="silver" stroke-width="3.2" stroke-dasharray="160" id="p"/>
+      <path d="M 0,320 H160" stroke="silver" stroke-width="3.2" stroke-dasharray="160" id="p"/>
       <style>
         #p {animation: p 3500ms steps(7, start) infinite}
         @keyframes p {
