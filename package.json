@@ -1,0 +1,32 @@
+{
+  "name": "fumen-svg",
+  "version": "0.0.0",
+  "description": "Convert fumen data into animated SVG.",
+  "keywords": [
+    "fumen",
+    "tetris"
+  ],
+  "main": "index.js",
+  "files": [],
+  "eslintIgnore": [
+    "coverage"
+  ],
+  "scripts": {
+    "test": "eslint **/*.js --cache && c8 --reporter lcov mocha",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "repository": "eight04/fumen-svg",
+  "author": "eight04 <eight04@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "c8": "^6.0.1",
+    "eslint": "^6.7.2",
+    "mocha": "^6.2.2",
+    "tetris-fumen": "^1.0.1"
+  },
+  "dependencies": {
+    "escape-html": "^1.0.3"
+  },
+  "peerDependencies": {}
+}
