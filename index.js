@@ -74,17 +74,27 @@ function createSVG({
   delay = 500,
   size = 16,
   commentSize = 16,
-  animateType = "css"
+  animateType = "css",
+  comment = "auto"
 }) {
   if (index != null) {
     pages = pages.slice(index, index + 1);
   }
   const frames = pages.map(pageToFrame);
+  const drawComment = 
+    comment === "always" ? true :
+    comment === "none" ? false :
+    pages.some(p => p.comment);
   const commentHeight = commentSize * 1.6;
   const commentOffset = commentSize * 1.2;
   const commentY = size * 20;
   const width = size * 10;
-  const height = size * 20 + commentHeight; // comment box;
+  const height = size * 20 + (drawComment ? commentHeight : 0);
+  
+  if (drawComment && !pages[0].comment) {
+    // draw empty comment box on first page
+    pages[0].comment = " ";
+  }
   
   // diff frames
   for (let i = frames.length - 1; i >= 1; i--) {
@@ -105,7 +115,7 @@ function createSVG({
     layers.push(`
       <svg viewBox="0 0 ${width} ${height}" id="f${i}">
         ${layer.tiles.join("")}
-        ${createComment(pages[i].comment, width, commentHeight, commentY, commentSize, commentOffset)}
+        ${drawComment ? createComment(pages[i].comment, width, commentHeight, commentY, commentSize, commentOffset) : ""}
         ${createAnimate(i, frames.length, delay, animateType)}
       </svg>`);
   }

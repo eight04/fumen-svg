@@ -44,8 +44,9 @@ This module exports following members:
 createSVG({
   data: String,
   index?: Number,
-  delay?: Number = 500,
-  size?: Number = 16
+  delay?: Number,
+  size?: Number,
+  comment?: String
 }) => output: String
 ```
 
@@ -53,9 +54,15 @@ createSVG({
 
 If `index` is specified, create an SVG of the specified frame instead of an animated image.
 
-`delay` controls the delay between each frame. Unit: ms.
+`delay` controls the delay between each frame. Unit: ms. Default: `500`.
 
-`size` is the width/height of a single tile. Unit: px.
+`size` is the width/height of a single tile. Unit: px. Default: `16`.
+
+Use `comment` to control whether to draw the comment box. Available values:
+
+* `"always"` - always draw the comment box.
+* `"none"` - don't draw the comment box.
+* `"auto"` (default) - draw the comment box if there is a comment.
 
 Changelog
 ---------
