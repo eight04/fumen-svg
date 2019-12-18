@@ -65,7 +65,8 @@ function createSVG({
   index,
   delay = 500,
   size = 16,
-  commentSize = 16
+  commentSize = 16,
+  animateType = "css"
 }) {
   if (index != null) {
     pages = pages.slice(index, index + 1);
@@ -94,29 +95,45 @@ function createSVG({
       usedTiles.add(t);
     }
     layers.push(`
-      <svg viewBox="0 0 ${width} ${height}">
+      <svg viewBox="0 0 ${width} ${height}" id="f${i}">
         ${layer.tiles.join("")}
         ${createComment(pages[i].comment, width, commentHeight, commentY, commentSize, commentOffset)}
-        ${createAnimate(i, frames.length, delay)}
+        ${createAnimate(i, frames.length, delay, animateType)}
       </svg>`);
   }
   return `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" style="font-family: sans-serif">
       <defs>${createDefs(usedTiles, size)}</defs>
       ${layers.join("")}
-      ${createProgress(frames.length, width, delay)}
+      ${createProgress(frames.length, width, delay, animateType)}
     </svg>`;
 }
 
-function createProgress(total, width, delay) {
+function createProgress(total, width, delay, type) {
   if (total === 1) {
     return "";
   }
+  const attr = `d="M 0,0 H${width}" stroke="silver" stroke-width="${width / 50}" stroke-dasharray="${width}"`;
+  if (type === "css") {
+    return `
+      <path ${attr} id="p"/>
+      <style>
+        #p {animation: p ${delay * total}ms steps(${total}, start) infinite}
+        @keyframes p {
+          from {
+            stroke-dashoffset: ${width};
+          }
+          to {
+            stroke-dashoffset: 0;
+          }
+        }
+      </style>`;
+  }
   return `
-    <path d="M 0,0 H${width}" stroke="silver" stroke-width="${width / 50}" stroke-dasharray="${width}">
+    <path ${attr}>
       <animate attributeName="stroke-dashoffset" values="${createValues()}" calcMode="discrete" dur="${total * delay}ms" repeatCount="indefinite"/>
     </path>`;
-  
+    
   function createValues() {
     const values = [];
     for (let i = 0; i < total; i++) {
@@ -135,9 +152,19 @@ function createComment(text, width, height, y, size, offset) {
     <text x="${width / 2}" y="${y + offset}" text-anchor="middle" font-size="${size}" fill="white">${escape(text)}</text>`;
 }
 
-function createAnimate(i, total, delay) {
+function createAnimate(i, total, delay, type) {
   if (i === 0) {
     return "";
+  }
+  if (type === "css") {
+    return `<style>
+      #f${i} {
+        animation: a${i} ${total * delay}ms step-end infinite;
+      }
+      @keyframes a${i} {
+        0% {opacity: 0} ${i * 100 / total}% {opacity: 1}
+      }
+    </style>`;
   }
   return `<animate attributeName="display" values="none;inline" calcMode="discrete" keyTimes="0;${i/total}" dur="${delay * total}ms" repeatCount="indefinite" />`;
 }
