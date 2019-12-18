@@ -67,6 +67,10 @@ Use `comment` to control whether to draw the comment box. Available values:
 Changelog
 ---------
 
+* 0.1.2 (Dec 19, 2019)
+
+  - Add: `comment` option.
+
 * 0.1.1 (Dec 19, 2019)
 
   - Fix: deps.
