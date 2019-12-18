@@ -60,6 +60,6 @@ If `index` is specified, create an SVG of the specified frame instead of an anim
 Changelog
 ---------
 
-* 0.1.0 (Aug 5, 2018)
+* 0.1.0 (Dec 19, 2019)
 
   - Initial release.
