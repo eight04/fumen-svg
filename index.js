@@ -21,6 +21,12 @@ const tiles = {
   Sl: "#0f0"
 };
 
+function createTile(name, size) {
+  const fill = tiles[name];
+  const stroke = name === "_" ? "rgba(256,256,256,0.1)" : "rgba(0,0,0,0.2)";
+  return `<rect id="t${name}" fill="${fill}" width="${size}" height="${size}" stroke="${stroke}"/>`;
+}
+
 function pageToFrame(page) {
   const field = page.field.copy();
   const filledMino = page.operation && field.fill(page.operation);
@@ -180,7 +186,7 @@ function createAnimate(i, total, delay, type) {
         animation: a${i} ${total * delay}ms step-end infinite;
       }
       @keyframes a${i} {
-        0% {opacity: 0} ${i * 100 / total}% {opacity: 1}
+        0% {visibility: hidden} ${i * 100 / total}% {visibility: visible}
       }
     </style>`;
   }
@@ -189,11 +195,8 @@ function createAnimate(i, total, delay, type) {
 
 function createDefs(include, size) {
   const els = [];
-  for (const [name, style] of Object.entries(tiles)) {
-    if (!include.has(name)) {
-      continue;
-    }
-    els.push(`<rect id="t${name}" fill="${style}" width="${size}" height="${size}"/>`);
+  for (const name of include) {
+    els.push(createTile(name, size));
   }
   return els.join("");
 }
