@@ -23,8 +23,9 @@ const tiles = {
 
 function pageToFrame(page) {
   const field = page.field.copy();
-  field.fill(page.operation);
+  const filledMino = page.operation && field.fill(page.operation);
   const output = Array(200);
+  const touchedY = new Set;
   
   // extract field data
   for (let y = 0; y < 20; y++) {
@@ -36,14 +37,21 @@ function pageToFrame(page) {
     }
   }
   
-  // FIXME: make the current operation lighter
-  // https://github.com/knewjade/tetris-fumen/issues/1
+  // make the current operation lighter
+  if (filledMino) {
+    for (const {x, y} of filledMino.positions()) {
+      touchedY.add(y);
+      output[y * 10 + x].light = true;
+    }
+  }
   
-  // FIXME: only lighten lines that's related to the operation pieces
-  for (let y = 0; y < 20; y++) {
-    if (isLineFilled(field, y)) {
-      for (let x = 0; x < 10; x++) {
-        output[y * 10 + x].light = true;
+  if (page.flags.lock) {
+    // lighten lines which should be cleared
+    for (const y of touchedY) {
+      if (isLineFilled(field, y)) {
+        for (let x = 0; x < 10; x++) {
+          output[y * 10 + x].light = true;
+        }
       }
     }
   }
