@@ -1,6 +1,6 @@
 {
   "name": "fumen-svg",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Convert fumen data into animated SVG.",
   "keywords": [
     "fumen",
