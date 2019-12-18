@@ -34,7 +34,7 @@ fs.writeFileSync("animated.svg", output);
 API
 ----
 
-This module exports folling members:
+This module exports following members:
 
 * `createSVG`
 
