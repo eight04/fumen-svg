@@ -13,7 +13,7 @@ Installation
 ------------
 
 ```
-npm install -D fumen-svg
+npm install fumen-svg
 ```
 
 Usage
