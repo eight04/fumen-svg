@@ -10,6 +10,10 @@ const CASES = [
   {
     name: "hambuger",
     data: "m115@RhBtIeBtQeAgHAhG8DeF8CeG8CeG8JeAAAvhBFlBkf?BsgG8DeF8CeG8neAAAvhCFbBJkBAAA"
+  },
+  {
+    name: "fin TSD",
+    data: "v115@0gC8GeA8HeB8HeB8BeH8AeG8JeAgH0giHGegHveAAA?vhClgfNqBAAA"
   }
 ];
 
