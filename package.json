@@ -26,7 +26,8 @@
     "tetris-fumen": "^1.0.1"
   },
   "dependencies": {
-    "escape-html": "^1.0.3"
+    "escape-html": "^1.0.3",
+    "html-validator": "^5.0.0"
   },
   "peerDependencies": {}
 }
