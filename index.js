@@ -5,19 +5,19 @@ const tiles = {
   _: "#000",
   X: "#999",
   Xl: "#ccc",
-  I: "#099",
+  I: "hsl(180, 100%, 35%)",
   Il: "#0ff",
-  L: "#960",
-  Ll: "#f90",
-  O: "#990",
+  L: "hsl(30, 95%, 47%)",
+  Ll: "hsl(36, 100%, 55%)",
+  O: "hsl(60, 70%, 40%)",
   Ol: "#ff0",
-  Z: "#c33",
-  Zl: "#f00",
+  Z: "hsl(0, 70%, 50%)",
+  Zl: "hsl(0, 100%, 63%)",
   T: "#909",
   Tl: "#f0f",
-  J: "#00b",
-  Jl: "#00f",
-  S: "#090",
+  J: "hsl(240, 80%, 50%)",
+  Jl: "hsl(240, 100%, 60%)",
+  S: "hsl(120, 100%, 33%)",
   Sl: "#0f0"
 };
 
@@ -172,7 +172,7 @@ function createComment(text, width, height, y, size, offset) {
     return "";
   }
   return `
-    <rect fill="grey" y="${y}" width="${width}" height="${height}"/>
+    <rect fill="#333" y="${y}" width="${width}" height="${height}"/>
     <text x="${width / 2}" y="${y + offset}" text-anchor="middle" font-size="${size}" fill="white">${escape(text)}</text>`;
 }
 

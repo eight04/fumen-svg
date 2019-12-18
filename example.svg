@@ -1,18 +1,18 @@
 
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 345.6" width="160" height="345.6" style="font-family: sans-serif">
-      <defs><rect id="t_" fill="#000" width="16" height="16" stroke="rgba(256,256,256,0.1)"/><rect id="tIl" fill="#0ff" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tI" fill="#099" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tZl" fill="#f00" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tLl" fill="#f90" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tZ" fill="#c33" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tL" fill="#960" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tSl" fill="#0f0" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tS" fill="#090" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tOl" fill="#ff0" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tO" fill="#990" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tJl" fill="#00f" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tTl" fill="#f0f" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tJ" fill="#00b" width="16" height="16" stroke="rgba(0,0,0,0.2)"/></defs>
+      <defs><rect id="t_" fill="#000" width="16" height="16" stroke="rgba(256,256,256,0.1)"/><rect id="tIl" fill="#0ff" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tI" fill="hsl(180, 100%, 35%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tZl" fill="hsl(0, 100%, 63%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tLl" fill="hsl(36, 100%, 55%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tZ" fill="hsl(0, 70%, 50%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tL" fill="hsl(30, 95%, 47%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tSl" fill="#0f0" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tS" fill="hsl(120, 100%, 33%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tOl" fill="#ff0" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tO" fill="hsl(60, 70%, 40%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tJl" fill="hsl(240, 100%, 60%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tTl" fill="#f0f" width="16" height="16" stroke="rgba(0,0,0,0.2)"/><rect id="tJ" fill="hsl(240, 80%, 50%)" width="16" height="16" stroke="rgba(0,0,0,0.2)"/></defs>
       
       <svg viewBox="0 0 160 345.6" id="f0">
         <use href="#t_" x="0" y="304"/><use href="#t_" x="16" y="304"/><use href="#t_" x="32" y="304"/><use href="#tIl" x="48" y="304"/><use href="#tIl" x="64" y="304"/><use href="#tIl" x="80" y="304"/><use href="#tIl" x="96" y="304"/><use href="#t_" x="112" y="304"/><use href="#t_" x="128" y="304"/><use href="#t_" x="144" y="304"/><use href="#t_" x="0" y="288"/><use href="#t_" x="16" y="288"/><use href="#t_" x="32" y="288"/><use href="#t_" x="48" y="288"/><use href="#t_" x="64" y="288"/><use href="#t_" x="80" y="288"/><use href="#t_" x="96" y="288"/><use href="#t_" x="112" y="288"/><use href="#t_" x="128" y="288"/><use href="#t_" x="144" y="288"/><use href="#t_" x="0" y="272"/><use href="#t_" x="16" y="272"/><use href="#t_" x="32" y="272"/><use href="#t_" x="48" y="272"/><use href="#t_" x="64" y="272"/><use href="#t_" x="80" y="272"/><use href="#t_" x="96" y="272"/><use href="#t_" x="112" y="272"/><use href="#t_" x="128" y="272"/><use href="#t_" x="144" y="272"/><use href="#t_" x="0" y="256"/><use href="#t_" x="16" y="256"/><use href="#t_" x="32" y="256"/><use href="#t_" x="48" y="256"/><use href="#t_" x="64" y="256"/><use href="#t_" x="80" y="256"/><use href="#t_" x="96" y="256"/><use href="#t_" x="112" y="256"/><use href="#t_" x="128" y="256"/><use href="#t_" x="144" y="256"/><use href="#t_" x="0" y="240"/><use href="#t_" x="16" y="240"/><use href="#t_" x="32" y="240"/><use href="#t_" x="48" y="240"/><use href="#t_" x="64" y="240"/><use href="#t_" x="80" y="240"/><use href="#t_" x="96" y="240"/><use href="#t_" x="112" y="240"/><use href="#t_" x="128" y="240"/><use href="#t_" x="144" y="240"/><use href="#t_" x="0" y="224"/><use href="#t_" x="16" y="224"/><use href="#t_" x="32" y="224"/><use href="#t_" x="48" y="224"/><use href="#t_" x="64" y="224"/><use href="#t_" x="80" y="224"/><use href="#t_" x="96" y="224"/><use href="#t_" x="112" y="224"/><use href="#t_" x="128" y="224"/><use href="#t_" x="144" y="224"/><use href="#t_" x="0" y="208"/><use href="#t_" x="16" y="208"/><use href="#t_" x="32" y="208"/><use href="#t_" x="48" y="208"/><use href="#t_" x="64" y="208"/><use href="#t_" x="80" y="208"/><use href="#t_" x="96" y="208"/><use href="#t_" x="112" y="208"/><use href="#t_" x="128" y="208"/><use href="#t_" x="144" y="208"/><use href="#t_" x="0" y="192"/><use href="#t_" x="16" y="192"/><use href="#t_" x="32" y="192"/><use href="#t_" x="48" y="192"/><use href="#t_" x="64" y="192"/><use href="#t_" x="80" y="192"/><use href="#t_" x="96" y="192"/><use href="#t_" x="112" y="192"/><use href="#t_" x="128" y="192"/><use href="#t_" x="144" y="192"/><use href="#t_" x="0" y="176"/><use href="#t_" x="16" y="176"/><use href="#t_" x="32" y="176"/><use href="#t_" x="48" y="176"/><use href="#t_" x="64" y="176"/><use href="#t_" x="80" y="176"/><use href="#t_" x="96" y="176"/><use href="#t_" x="112" y="176"/><use href="#t_" x="128" y="176"/><use href="#t_" x="144" y="176"/><use href="#t_" x="0" y="160"/><use href="#t_" x="16" y="160"/><use href="#t_" x="32" y="160"/><use href="#t_" x="48" y="160"/><use href="#t_" x="64" y="160"/><use href="#t_" x="80" y="160"/><use href="#t_" x="96" y="160"/><use href="#t_" x="112" y="160"/><use href="#t_" x="128" y="160"/><use href="#t_" x="144" y="160"/><use href="#t_" x="0" y="144"/><use href="#t_" x="16" y="144"/><use href="#t_" x="32" y="144"/><use href="#t_" x="48" y="144"/><use href="#t_" x="64" y="144"/><use href="#t_" x="80" y="144"/><use href="#t_" x="96" y="144"/><use href="#t_" x="112" y="144"/><use href="#t_" x="128" y="144"/><use href="#t_" x="144" y="144"/><use href="#t_" x="0" y="128"/><use href="#t_" x="16" y="128"/><use href="#t_" x="32" y="128"/><use href="#t_" x="48" y="128"/><use href="#t_" x="64" y="128"/><use href="#t_" x="80" y="128"/><use href="#t_" x="96" y="128"/><use href="#t_" x="112" y="128"/><use href="#t_" x="128" y="128"/><use href="#t_" x="144" y="128"/><use href="#t_" x="0" y="112"/><use href="#t_" x="16" y="112"/><use href="#t_" x="32" y="112"/><use href="#t_" x="48" y="112"/><use href="#t_" x="64" y="112"/><use href="#t_" x="80" y="112"/><use href="#t_" x="96" y="112"/><use href="#t_" x="112" y="112"/><use href="#t_" x="128" y="112"/><use href="#t_" x="144" y="112"/><use href="#t_" x="0" y="96"/><use href="#t_" x="16" y="96"/><use href="#t_" x="32" y="96"/><use href="#t_" x="48" y="96"/><use href="#t_" x="64" y="96"/><use href="#t_" x="80" y="96"/><use href="#t_" x="96" y="96"/><use href="#t_" x="112" y="96"/><use href="#t_" x="128" y="96"/><use href="#t_" x="144" y="96"/><use href="#t_" x="0" y="80"/><use href="#t_" x="16" y="80"/><use href="#t_" x="32" y="80"/><use href="#t_" x="48" y="80"/><use href="#t_" x="64" y="80"/><use href="#t_" x="80" y="80"/><use href="#t_" x="96" y="80"/><use href="#t_" x="112" y="80"/><use href="#t_" x="128" y="80"/><use href="#t_" x="144" y="80"/><use href="#t_" x="0" y="64"/><use href="#t_" x="16" y="64"/><use href="#t_" x="32" y="64"/><use href="#t_" x="48" y="64"/><use href="#t_" x="64" y="64"/><use href="#t_" x="80" y="64"/><use href="#t_" x="96" y="64"/><use href="#t_" x="112" y="64"/><use href="#t_" x="128" y="64"/><use href="#t_" x="144" y="64"/><use href="#t_" x="0" y="48"/><use href="#t_" x="16" y="48"/><use href="#t_" x="32" y="48"/><use href="#t_" x="48" y="48"/><use href="#t_" x="64" y="48"/><use href="#t_" x="80" y="48"/><use href="#t_" x="96" y="48"/><use href="#t_" x="112" y="48"/><use href="#t_" x="128" y="48"/><use href="#t_" x="144" y="48"/><use href="#t_" x="0" y="32"/><use href="#t_" x="16" y="32"/><use href="#t_" x="32" y="32"/><use href="#t_" x="48" y="32"/><use href="#t_" x="64" y="32"/><use href="#t_" x="80" y="32"/><use href="#t_" x="96" y="32"/><use href="#t_" x="112" y="32"/><use href="#t_" x="128" y="32"/><use href="#t_" x="144" y="32"/><use href="#t_" x="0" y="16"/><use href="#t_" x="16" y="16"/><use href="#t_" x="32" y="16"/><use href="#t_" x="48" y="16"/><use href="#t_" x="64" y="16"/><use href="#t_" x="80" y="16"/><use href="#t_" x="96" y="16"/><use href="#t_" x="112" y="16"/><use href="#t_" x="128" y="16"/><use href="#t_" x="144" y="16"/><use href="#t_" x="0" y="0"/><use href="#t_" x="16" y="0"/><use href="#t_" x="32" y="0"/><use href="#t_" x="48" y="0"/><use href="#t_" x="64" y="0"/><use href="#t_" x="80" y="0"/><use href="#t_" x="96" y="0"/><use href="#t_" x="112" y="0"/><use href="#t_" x="128" y="0"/><use href="#t_" x="144" y="0"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         
       </svg>
       <svg viewBox="0 0 160 345.6" id="f1">
         <use href="#tI" x="48" y="304"/><use href="#tI" x="64" y="304"/><use href="#tI" x="80" y="304"/><use href="#tI" x="96" y="304"/><use href="#tZl" x="64" y="288"/><use href="#tZl" x="80" y="288"/><use href="#tZl" x="48" y="272"/><use href="#tZl" x="64" y="272"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f1 {
@@ -26,7 +26,7 @@
       <svg viewBox="0 0 160 345.6" id="f2">
         <use href="#tLl" x="0" y="304"/><use href="#tLl" x="16" y="304"/><use href="#tLl" x="0" y="288"/><use href="#tZ" x="64" y="288"/><use href="#tZ" x="80" y="288"/><use href="#tLl" x="0" y="272"/><use href="#tZ" x="48" y="272"/><use href="#tZ" x="64" y="272"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f2 {
@@ -40,7 +40,7 @@
       <svg viewBox="0 0 160 345.6" id="f3">
         <use href="#tL" x="0" y="304"/><use href="#tL" x="16" y="304"/><use href="#tSl" x="112" y="304"/><use href="#tL" x="0" y="288"/><use href="#tSl" x="96" y="288"/><use href="#tSl" x="112" y="288"/><use href="#tL" x="0" y="272"/><use href="#tSl" x="96" y="272"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f3 {
@@ -54,7 +54,7 @@
       <svg viewBox="0 0 160 345.6" id="f4">
         <use href="#tS" x="112" y="304"/><use href="#tOl" x="128" y="304"/><use href="#tOl" x="144" y="304"/><use href="#tS" x="96" y="288"/><use href="#tS" x="112" y="288"/><use href="#tOl" x="128" y="288"/><use href="#tOl" x="144" y="288"/><use href="#tS" x="96" y="272"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f4 {
@@ -68,7 +68,7 @@
       <svg viewBox="0 0 160 345.6" id="f5">
         <use href="#tO" x="128" y="304"/><use href="#tO" x="144" y="304"/><use href="#tO" x="128" y="288"/><use href="#tO" x="144" y="288"/><use href="#tJl" x="80" y="272"/><use href="#tJl" x="48" y="256"/><use href="#tJl" x="64" y="256"/><use href="#tJl" x="80" y="256"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f5 {
@@ -82,7 +82,7 @@
       <svg viewBox="0 0 160 345.6" id="f6">
         <use href="#tLl" x="0" y="304"/><use href="#tLl" x="16" y="304"/><use href="#tTl" x="32" y="304"/><use href="#tIl" x="48" y="304"/><use href="#tIl" x="64" y="304"/><use href="#tIl" x="80" y="304"/><use href="#tIl" x="96" y="304"/><use href="#tSl" x="112" y="304"/><use href="#tOl" x="128" y="304"/><use href="#tOl" x="144" y="304"/><use href="#tLl" x="0" y="288"/><use href="#tTl" x="16" y="288"/><use href="#tTl" x="32" y="288"/><use href="#tTl" x="48" y="288"/><use href="#tZl" x="64" y="288"/><use href="#tZl" x="80" y="288"/><use href="#tSl" x="96" y="288"/><use href="#tSl" x="112" y="288"/><use href="#tOl" x="128" y="288"/><use href="#tOl" x="144" y="288"/><use href="#tJ" x="80" y="272"/><use href="#tJ" x="48" y="256"/><use href="#tJ" x="64" y="256"/><use href="#tJ" x="80" y="256"/>
         
-    <rect fill="grey" y="320" width="160" height="25.6"/>
+    <rect fill="#333" y="320" width="160" height="25.6"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">T-Spin Double</text>
         <style>
       #f6 {
