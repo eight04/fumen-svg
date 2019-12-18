@@ -101,7 +101,7 @@ function createSVG({
       </svg>`);
   }
   return `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" style="font-family: sans-serif">
       <defs>${createDefs(usedTiles, size)}</defs>
       ${layers.join("")}
       ${createProgress(frames.length, width, delay)}

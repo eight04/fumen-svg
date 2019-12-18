@@ -7,6 +7,8 @@ fumen-svg
 
 Convert fumen data into animated SVG.
 
+![example](example.svg)
+
 Installation
 ------------
 
