@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "escape-html": "^1.0.3",
-    "tetris-fumen": "^1.1.0"
+    "tetris-fumen": "^1.1.1"
   },
   "peerDependencies": {}
 }

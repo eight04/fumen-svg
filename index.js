@@ -29,7 +29,7 @@ function createTile(name, size) {
 
 function pageToFrame(page) {
   const field = page.field.copy();
-  const activeMino = page.operation && page.mino();
+  const filledMino = page.operation && field.fill(page.operation);
   const output = Array(200);
   const touchedY = new Set;
   
@@ -44,10 +44,9 @@ function pageToFrame(page) {
   }
   
   // draw active mino
-  if (activeMino) {
-    for (const {x, y} of activeMino.positions()) {
+  if (filledMino) {
+    for (const {x, y} of filledMino.positions()) {
       touchedY.add(y);
-      output[y * 10 + x].type = activeMino.type;
       output[y * 10 + x].light = true;
     }
   }

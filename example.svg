@@ -70,7 +70,7 @@
     </style>
       </svg>
       <svg viewBox="0 0 160 346" id="f6">
-        <use href="#tTl" x="32" y="304"/><use href="#tTl" x="16" y="288"/><use href="#tTl" x="32" y="288"/><use href="#tTl" x="48" y="288"/><use href="#tJ" x="80" y="272"/><use href="#tJ" x="48" y="256"/><use href="#tJ" x="64" y="256"/><use href="#tJ" x="80" y="256"/>
+        <use href="#tLl" x="0" y="304"/><use href="#tLl" x="16" y="304"/><use href="#tTl" x="32" y="304"/><use href="#tIl" x="48" y="304"/><use href="#tIl" x="64" y="304"/><use href="#tIl" x="80" y="304"/><use href="#tIl" x="96" y="304"/><use href="#tSl" x="112" y="304"/><use href="#tOl" x="128" y="304"/><use href="#tOl" x="144" y="304"/><use href="#tLl" x="0" y="288"/><use href="#tTl" x="16" y="288"/><use href="#tTl" x="32" y="288"/><use href="#tTl" x="48" y="288"/><use href="#tZl" x="64" y="288"/><use href="#tZl" x="80" y="288"/><use href="#tSl" x="96" y="288"/><use href="#tSl" x="112" y="288"/><use href="#tOl" x="128" y="288"/><use href="#tOl" x="144" y="288"/><use href="#tJ" x="80" y="272"/><use href="#tJ" x="48" y="256"/><use href="#tJ" x="64" y="256"/><use href="#tJ" x="80" y="256"/>
         
     <rect fill="#333" y="320" width="160" height="26"/>
     <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">T-Spin Double</text>
