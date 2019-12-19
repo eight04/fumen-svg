@@ -91,7 +91,7 @@ function createSVG({
     comment === "always" ? true :
     comment === "none" ? false :
     pages.some(p => p.comment);
-  const commentHeight = commentSize * 1.6;
+  const commentHeight = Math.round(commentSize * 1.6);
   const commentOffset = commentSize * 1.2;
   const commentY = size * 20;
   const width = size * 10;
