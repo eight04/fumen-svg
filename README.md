@@ -7,7 +7,7 @@ fumen-svg
 
 Convert fumen data into animated SVG.
 
-![example](example.svg)
+![example](https://raw.githack.com/eight04/fumen-svg/master/example.svg)
 
 Installation
 ------------
@@ -66,6 +66,14 @@ Use `comment` to control whether to draw the comment box. Available values:
 
 Changelog
 ---------
+
+* 0.1.3 (Dec 19, 2019)
+
+  - Fix: draw background before minos.
+  - Fix: can't fill piece error.
+  - Fix: images height is not an integer.
+  - Fix: remove duplicated comment.
+  - Add: grid to background.
 
 * 0.1.2 (Dec 19, 2019)
 
