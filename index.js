@@ -210,6 +210,7 @@ function createDefs(include, size) {
 }
 
 function createLayer(buffer, size) {
+  const bgTiles = [];
   const tiles = [];
   const used = new Set;
   for (let i = 0; i < buffer.length; i++) {
@@ -220,11 +221,16 @@ function createLayer(buffer, size) {
     used.add(name);
     const y = Math.floor(i / 10);
     const x = i % 10;
-    tiles.push(`<use href="#t${name}" x="${x * size}" y="${(20 - y - 1) * size}"/>`);
+    const data = `<use href="#t${name}" x="${x * size}" y="${(20 - y - 1) * size}"/>`;
+    if (name === "_") {
+      bgTiles.push(data);
+    } else {
+      tiles.push(data);
+    }
   }
   return {
     used,
-    tiles
+    tiles: bgTiles.concat(tiles)
   };
 }
 
