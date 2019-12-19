@@ -20,10 +20,24 @@ const CASES = [
 describe("createSVG", () => {
   for (const c of CASES) {
     it(c.name, async () => {
-      await validateSVG(createSVG({data: c.data}));
+      const svg = createSVG({data: c.data});
+      await validateSVG(svg);
+      checkDuplicatedComment(svg);
     });
   }
 });
+
+function checkDuplicatedComment(svg) {
+  const rx = /[^<>]+<\/text>/g;
+  const found = new Set;
+  let match;
+  while ((match = rx.exec(svg))) {
+    if (found.has(match[0])) {
+      throw new Error(`Found duplicated text: ${match[0]}`);
+    }
+    found.add(match[0]);
+  }
+}
 
 async function validateSVG(svg) {
   const result = await validator({
