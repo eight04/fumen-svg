@@ -67,6 +67,10 @@ Use `comment` to control whether to draw the comment box. Available values:
 Changelog
 ---------
 
+* 0.1.4 (Dec 19, 2019)
+
+  - Fix: lines to be cleared should be lighten.
+
 * 0.1.3 (Dec 19, 2019)
 
   - Fix: draw background before minos.
