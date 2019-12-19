@@ -12,8 +12,6 @@
       <svg viewBox="0 0 160 345.6" id="f1">
         <use href="#tI" x="48" y="304"/><use href="#tI" x="64" y="304"/><use href="#tI" x="80" y="304"/><use href="#tI" x="96" y="304"/><use href="#tZl" x="64" y="288"/><use href="#tZl" x="80" y="288"/><use href="#tZl" x="48" y="272"/><use href="#tZl" x="64" y="272"/>
         
-    <rect fill="#333" y="320" width="160" height="25.6"/>
-    <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f1 {
         animation: a1 3500ms step-end infinite;
@@ -26,8 +24,6 @@
       <svg viewBox="0 0 160 345.6" id="f2">
         <use href="#tLl" x="0" y="304"/><use href="#tLl" x="16" y="304"/><use href="#tLl" x="0" y="288"/><use href="#tZ" x="64" y="288"/><use href="#tZ" x="80" y="288"/><use href="#tLl" x="0" y="272"/><use href="#tZ" x="48" y="272"/><use href="#tZ" x="64" y="272"/>
         
-    <rect fill="#333" y="320" width="160" height="25.6"/>
-    <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f2 {
         animation: a2 3500ms step-end infinite;
@@ -40,8 +36,6 @@
       <svg viewBox="0 0 160 345.6" id="f3">
         <use href="#tL" x="0" y="304"/><use href="#tL" x="16" y="304"/><use href="#tSl" x="112" y="304"/><use href="#tL" x="0" y="288"/><use href="#tSl" x="96" y="288"/><use href="#tSl" x="112" y="288"/><use href="#tL" x="0" y="272"/><use href="#tSl" x="96" y="272"/>
         
-    <rect fill="#333" y="320" width="160" height="25.6"/>
-    <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f3 {
         animation: a3 3500ms step-end infinite;
@@ -54,8 +48,6 @@
       <svg viewBox="0 0 160 345.6" id="f4">
         <use href="#tS" x="112" y="304"/><use href="#tOl" x="128" y="304"/><use href="#tOl" x="144" y="304"/><use href="#tS" x="96" y="288"/><use href="#tS" x="112" y="288"/><use href="#tOl" x="128" y="288"/><use href="#tOl" x="144" y="288"/><use href="#tS" x="96" y="272"/>
         
-    <rect fill="#333" y="320" width="160" height="25.6"/>
-    <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f4 {
         animation: a4 3500ms step-end infinite;
@@ -68,8 +60,6 @@
       <svg viewBox="0 0 160 345.6" id="f5">
         <use href="#tO" x="128" y="304"/><use href="#tO" x="144" y="304"/><use href="#tO" x="128" y="288"/><use href="#tO" x="144" y="288"/><use href="#tJl" x="80" y="272"/><use href="#tJl" x="48" y="256"/><use href="#tJl" x="64" y="256"/><use href="#tJl" x="80" y="256"/>
         
-    <rect fill="#333" y="320" width="160" height="25.6"/>
-    <text x="80" y="339.2" text-anchor="middle" font-size="16" fill="white">Opening</text>
         <style>
       #f5 {
         animation: a5 3500ms step-end infinite;

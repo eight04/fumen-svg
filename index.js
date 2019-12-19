@@ -111,6 +111,13 @@ function createSVG({
     }
   }
   
+  // diff comment
+  for (let i = pages.length - 1; i >= 1; i--) {
+    if (pages[i].comment && pages[i].comment === pages[i - 1].comment) {
+      pages[i].comment = null;
+    }
+  }
+  
   const layers = [];
   const usedTiles = new Set;
   for (let i = 0; i < frames.length; i++) {
