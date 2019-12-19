@@ -15,7 +15,7 @@ const tiles = {
   Zl: "hsl(0, 100%, 63%)",
   T: "#909",
   Tl: "#f0f",
-  J: "hsl(240, 80%, 50%)",
+  J: "hsl(240, 75%, 50%)",
   Jl: "hsl(240, 100%, 60%)",
   S: "hsl(120, 100%, 33%)",
   Sl: "#0f0"
@@ -23,13 +23,13 @@ const tiles = {
 
 function createTile(name, size) {
   const fill = tiles[name];
-  const stroke = name === "_" ? "rgba(256,256,256,0.1)" : "rgba(0,0,0,0.2)";
-  return `<rect id="t${name}" fill="${fill}" width="${size}" height="${size}" stroke="${stroke}"/>`;
+  const stroke = name === "_" ? ' stroke="rgba(255,255,255,0.05)"' : "";
+  return `<rect id="t${name}" fill="${fill}" width="${size}" height="${size}"${stroke}/>`;
 }
 
 function pageToFrame(page) {
   const field = page.field.copy();
-  const filledMino = page.operation && field.fill(page.operation);
+  const activeMino = page.operation && page.mino();
   const output = Array(200);
   const touchedY = new Set;
   
@@ -43,10 +43,11 @@ function pageToFrame(page) {
     }
   }
   
-  // make the current operation lighter
-  if (filledMino) {
-    for (const {x, y} of filledMino.positions()) {
+  // draw active mino
+  if (activeMino) {
+    for (const {x, y} of activeMino.positions()) {
       touchedY.add(y);
+      output[y * 10 + x].type = activeMino.type;
       output[y * 10 + x].light = true;
     }
   }
