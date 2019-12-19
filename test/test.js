@@ -1,4 +1,5 @@
 /* eslint-env mocha */
+const assert = require("assert");
 const {createSVG} = require("..");
 const validator = require("html-validator");
 
@@ -14,6 +15,13 @@ const CASES = [
   {
     name: "fin TSD",
     data: "v115@0gC8GeA8HeB8HeB8BeH8AeG8JeAgH0giHGegHveAAA?vhClgfNqBAAA"
+  },
+  {
+    name: "cleared line should be lighten",
+    data: "v115@bhD8BeD8JeTLJ",
+    test: svg => {
+      assert(svg.includes("tXl"));
+    }
   }
 ];
 
@@ -23,6 +31,9 @@ describe("createSVG", () => {
       const svg = createSVG({data: c.data});
       await validateSVG(svg);
       checkDuplicatedComment(svg);
+      if (c.test) {
+        await c.test(svg);
+      }
     });
   }
 });
