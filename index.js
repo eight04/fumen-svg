@@ -97,11 +97,6 @@ function createSVG({
   const width = size * 10;
   const height = size * 20 + (drawComment ? commentHeight : 0);
   
-  if (drawComment && !pages[0].comment) {
-    // draw empty comment box on first page
-    pages[0].comment = " ";
-  }
-  
   // diff frames
   for (let i = frames.length - 1; i >= 1; i--) {
     for (let j = 0; j < frames[i].length; j++) {
@@ -125,19 +120,31 @@ function createSVG({
     for (const t of layer.used) {
       usedTiles.add(t);
     }
+    const comment = drawComment ?
+      createComment({
+        text: pages[i].comment,
+        width,
+        height: commentHeight,
+        y: commentY,
+        size: commentSize,
+        offset: commentOffset,
+        index: i
+      }) : "";
     layers.push(`
       <svg viewBox="0 0 ${width} ${height}" id="f${i}">
         ${layer.tiles.join("")}
-        ${drawComment ? createComment(pages[i].comment, width, commentHeight, commentY, commentSize, commentOffset) : ""}
+        ${comment}
         ${createAnimate(i, frames.length, delay, animateType)}
       </svg>`);
   }
   return `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width} ${height}" width="${width}" height="${height}" style="font-family: sans-serif">
-      <defs>${createDefs(usedTiles, size)}</defs>
+      <defs>
+        ${createDefs(usedTiles, size)}
+      </defs>
       ${layers.join("")}
       ${createProgress(commentY, frames.length, width, delay, animateType)}
-    </svg>`;
+    </svg>`.trim().replace(/>\s+</g, ">\n<");
 }
 
 function createProgress(y, total, width, delay, type) {
@@ -174,13 +181,16 @@ function createProgress(y, total, width, delay, type) {
   }
 }
 
-function createComment(text, width, height, y, size, offset) {
-  if (!text) {
+function createComment({text, width, height, y, size, offset, index}) {
+  if (!text && index) {
     return "";
   }
-  return `
-    <rect fill="#333" y="${y}" width="${width}" height="${height}"/>
-    <text x="${width / 2}" y="${y + offset}" text-anchor="middle" font-size="${size}" fill="white">${escape(text)}</text>`;
+  const bg = index === 0 ? 
+    `<rect id="cbg" fill="#333" y="${y}" width="${width}" height="${height}"/>` :
+    '<use href="#cbg"/>';
+  const textEl = text ?
+    `<text x="${width / 2}" y="${y + offset}" text-anchor="middle" font-size="${size}" fill="white">${escape(text)}</text>` : "";
+  return bg + textEl;
 }
 
 function createAnimate(i, total, delay, type) {

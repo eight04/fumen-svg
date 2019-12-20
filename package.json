@@ -24,7 +24,8 @@
     "c8": "^6.0.1",
     "eslint": "^6.7.2",
     "html-validator": "^5.0.0",
-    "mocha": "^6.2.2"
+    "mocha": "^6.2.2",
+    "svg-parser": "^2.0.2"
   },
   "dependencies": {
     "escape-html": "^1.0.3",

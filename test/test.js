@@ -1,7 +1,9 @@
 /* eslint-env mocha */
 const assert = require("assert");
-const {createSVG} = require("..");
 const validator = require("html-validator");
+const svgParser = require("svg-parser");
+
+const {createSVG} = require("..");
 
 const CASES = [
   {
@@ -22,12 +24,25 @@ const CASES = [
     test: svg => {
       assert(svg.includes("tXl"));
     }
+  },
+  {
+    name: "reuse comment background",
+    data: "v115@vhBAgWDAmnzCAAAPDAiC6CA",
+    test: svg => {
+      const root = svgParser.parse(svg);
+      const frames = root.children[0].children.filter(e => e.tagName === "svg");
+      assert.equal(frames.length, 2);
+      for (const el of frames[1].children) {
+        assert.notEqual(el.tagName, "rect");
+      }
+    }
   }
 ];
 
 describe("createSVG", () => {
   for (const c of CASES) {
-    it(c.name, async () => {
+    it(c.name, async function () {
+      this.timeout(10000);
       const svg = createSVG({data: c.data});
       await validateSVG(svg);
       checkDuplicatedComment(svg);
